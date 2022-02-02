@@ -4,17 +4,30 @@
  * write any Karel program you want.
  **/
  function main(){
-    moveInDirection();
+    putBeeper();
+    turnLeftThreeTimes();
     turnLeft();
-    moveInDirection();
- }
- 
- 
- function moveInDirection(){
- move();
- move();
- move();
- move();
- 
- 
- }
+    putBoxInPlace();
+    turnLeftThreeTimes();
+    putBoxInPlace();
+    turnLeftThreeTimes();
+    putBoxInPlace();
+    turnLeftThreeTimes();
+    putBoxInPlace();
+  }
+  
+  
+  function putBoxInPlace(){
+     move();
+    turnLeft();
+    move();
+    putBeeper();
+     }
+  
+  function turnLeftThreeTimes(){
+     turnLeft();
+    turnLeft();
+    turnLeft();
+     }
+  
+  
